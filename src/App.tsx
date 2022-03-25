@@ -75,7 +75,7 @@ export default function App() {
       <div style={{ display: "flex", flexDirection: "column", gap: ".5rem" }}>
         <div>
           <label>
-            Font:
+            Text:
             <input
               className="colorInput"
               type={"string"}
