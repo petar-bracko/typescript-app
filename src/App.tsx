@@ -80,7 +80,7 @@ export default function App() {
               className="colorInput"
               type={"string"}
               value={state.textColor}
-              onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+              onChange={(event: React.ChangeEvent<HTMLInputElement>): void =>
                 dispatch({
                   type: "FONT_COLOR_CHANGE",
                   payload: event.target.value,
@@ -96,7 +96,7 @@ export default function App() {
               className="colorInput"
               type={"string"}
               value={state.backgroundColor}
-              onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+              onChange={(event: React.ChangeEvent<HTMLInputElement>): void =>
                 dispatch({
                   type: "BACKGROUND_COLOR_CHANGE",
                   payload: event.target.value,
