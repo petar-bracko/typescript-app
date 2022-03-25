@@ -65,10 +65,10 @@ export default function App() {
         Counter value: {state.counter}
       </div>
       <div style={{ padding: ".5rem" }}>
-        <button onClick={() => dispatch({ type: "INCREMENT" })}>
+        <button onClick={(): void => dispatch({ type: "INCREMENT" })}>
           Increment
         </button>
-        <button onClick={() => dispatch({ type: "DECREMENT" })}>
+        <button onClick={(): void => dispatch({ type: "DECREMENT" })}>
           Decrement
         </button>
       </div>
