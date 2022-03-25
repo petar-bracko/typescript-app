@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.colorInput {
+  color: gray;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-left: 0.5rem;
+  outline: none;
+  padding: 0.1rem;
+}
