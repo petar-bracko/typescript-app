@@ -7,14 +7,15 @@ interface StateType {
   backgroundColor: string;
 }
 
-interface ActionType {
-  type: string;
-  payload?: string;
-}
-
 const reducer = (
   state: StateType,
-  { type, payload = "" }: ActionType
+  {
+    type,
+    payload = "",
+  }: {
+    type: string;
+    payload?: string;
+  }
 ): StateType => {
   switch (type) {
     case "INCREMENT":
