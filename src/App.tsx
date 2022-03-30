@@ -1,8 +1,8 @@
+import { ThemeContext, change } from "./components/Context";
+import { useContext, useState } from "react";
 import Effect from "./components/Effect";
 import Reducer from "./components/Reducer";
-import { ThemeContext, change } from "./components/Context";
 import "./style/App.css";
-import { useContext, useState } from "react";
 
 export default function App() {
   const [currentTheme, currentThemeSet] = useState(useContext(ThemeContext));
@@ -15,7 +15,7 @@ export default function App() {
         <Reducer />
         <Effect />
         <div style={{ marginTop: "50px" }}>
-          <button onClick={changeTheme}>Change</button>
+          <button onClick={changeTheme}>Change theme</button>
         </div>
       </div>
     </ThemeContext.Provider>

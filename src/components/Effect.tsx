@@ -8,8 +8,6 @@ export default function Effect() {
 
   useEffect(() => {
     document.title = `Count ${counter}`;
-
-    return (): void => console.log("clean up func");
   }, [counter]);
 
   return (
