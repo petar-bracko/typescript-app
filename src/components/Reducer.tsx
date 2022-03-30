@@ -1,4 +1,5 @@
-import { useReducer } from "react";
+import { useContext, useReducer } from "react";
+import { ThemeContext } from "./Context";
 import "../style/Reducer.css";
 
 interface StateType {
@@ -32,9 +33,19 @@ export default function Reducer() {
     textColor: "yellow",
   });
 
+  const theme = useContext(ThemeContext);
+
   return (
     <div>
-      <div>Reducer state: {JSON.stringify(state)}</div>
+      <div
+        style={{
+          backgroundColor: theme.bgColor,
+          color: theme.color,
+          padding: "2rem",
+        }}
+      >
+        Reducer state: {JSON.stringify(state)}
+      </div>
       <div
         style={{
           color: state.textColor,
