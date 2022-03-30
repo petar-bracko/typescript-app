@@ -11,8 +11,7 @@ const change = () => {
   themes.light = { ...themes.light, active: !themes.light.active };
   themes.dark = { ...themes.dark, active: !themes.dark.active };
 
-  activeTheme = themes.dark.active ? themes.dark : themes.light;
-  return activeTheme;
+  return (activeTheme = themes.dark.active ? themes.dark : themes.light);
 };
 
 const ThemeContext = createContext(activeTheme);
