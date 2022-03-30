@@ -1,4 +1,4 @@
-# Using TSX with React useReducer hook
+# React app with Typescript support
 
 # Getting Started with Create React App
 
