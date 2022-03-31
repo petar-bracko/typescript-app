@@ -5,9 +5,9 @@ import Reducer from "./components/Reducer";
 import "./style/App.css";
 
 export default function App() {
-  const [currentTheme, currentThemeSet] = useState(useContext(ThemeContext));
+  const [currentTheme, setCurrentTheme] = useState(useContext(ThemeContext));
 
-  const changeTheme = (): void => currentThemeSet(change());
+  const changeTheme = (): void => setCurrentTheme(change());
 
   return (
     <ThemeContext.Provider value={currentTheme}>

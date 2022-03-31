@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./Context";
 
 export default function Effect() {
-  const [counter, counterSet] = useState<number>(1);
+  const [counter, setCOunter] = useState<number>(1);
 
   const theme = useContext(ThemeContext);
 
@@ -21,7 +21,7 @@ export default function Effect() {
     >
       <div>Effect counter</div>
       <br />
-      <button onClick={(): void => counterSet(counter + 1)}>{counter}</button>
+      <button onClick={(): void => setCOunter(counter + 1)}>{counter}</button>
     </div>
   );
 }
