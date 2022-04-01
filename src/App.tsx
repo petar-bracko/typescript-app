@@ -15,7 +15,9 @@ export default function App() {
         <Reducer />
         <Effect />
         <div style={{ marginTop: "50px" }}>
-          <button onClick={changeTheme}>Change theme</button>
+          <button className="themeBtn" onClick={changeTheme}>
+            Change theme
+          </button>
         </div>
       </div>
     </ThemeContext.Provider>

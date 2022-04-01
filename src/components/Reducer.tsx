@@ -56,11 +56,24 @@ export default function Reducer() {
       >
         Counter value: {state.counter}
       </div>
-      <div style={{ padding: ".5rem" }}>
-        <button onClick={(): void => dispatch({ type: "INCREMENT" })}>
+      <div
+        style={{
+          padding: ".5rem",
+          display: "flex",
+          justifyContent: "center",
+          gap: "1rem",
+        }}
+      >
+        <button
+          className="button-73"
+          onClick={(): void => dispatch({ type: "INCREMENT" })}
+        >
           Increment
         </button>
-        <button onClick={(): void => dispatch({ type: "DECREMENT" })}>
+        <button
+          className="button-73"
+          onClick={(): void => dispatch({ type: "DECREMENT" })}
+        >
           Decrement
         </button>
       </div>

@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./Context";
+import "../style/Effect.css";
 
 export default function Effect() {
   const [counter, setCOunter] = useState<number>(1);
@@ -21,7 +22,12 @@ export default function Effect() {
     >
       <div>Effect counter</div>
       <br />
-      <button onClick={(): void => setCOunter(counter + 1)}>{counter}</button>
+      <button
+        className="button-49"
+        onClick={(): void => setCOunter(counter + 1)}
+      >
+        {counter}
+      </button>
     </div>
   );
 }

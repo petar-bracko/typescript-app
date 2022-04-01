@@ -2,3 +2,39 @@
   text-align: center;
   padding-top: 50px;
 }
+
+.themeBtn {
+  text-transform: uppercase;
+  padding: 0.8rem;
+  letter-spacing: 0.1rem;
+  background: rgb(255, 255, 255);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(128, 250, 255, 1) 50%,
+    rgba(16, 0, 255, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(128, 250, 255, 1) 50%,
+    rgba(16, 0, 255, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(128, 250, 255, 1) 50%,
+    rgba(16, 0, 255, 1) 100%
+  );
+  color: black;
+  transition: border-radius 0.2s, border-width 0.075s ease;
+  border: none;
+}
+
+.themeBtn:hover {
+  border-radius: 1rem;
+}
+
+.themeBtn:active {
+  border: 2px solid black;
+}
